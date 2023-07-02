@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+
+    }
+
+    .left { 
+        font-family: 'Quicksand', sans-serif;
+        position: absolute;
+        left: 20px;
+        top: -30px;
+        display: inline-block;
+        /* border: 2px solid rgb(252, 3, 3); */
+    }
+
+    .left img {
+        width: 224px;
+        filter: invert(100%);
+        padding: 40px;
+        margin-left: 50px;
+
+    }
+
+    .left div {
+        color: rgb(236, 69, 13);
+        text-align: center;
+        font-size: 75px;
+        line-height: 0px;
+
+
+
+    }
+
+    .mid {
+        display: block;
+        width: 53%;
+        margin: 65px auto;
+
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        font-size: 75px;
+        right: 30px;
+        top: 65px;
+        /* border: 2px solid rgb(197, 227, 25); */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 65px;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 54px 43px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(236, 69, 13);
+    }
+
+    .btn {
+        font-family: 'Playfair Display', serif;
+        margin: 11px 17px;
+        padding: 4px 14px;
+        font-size: 80px;
+        color: rgb(250, 248, 247);
+        background-color: black;
+        border: 2px solid rgb(188, 186, 185);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .right button:hover{
+        color: rgb(236, 69, 13);
+    }
+
+    .container {
+        position: absolute;
+        right: 150px;
+        margin: 250px -114px;
+        padding: 70px;
+        width: 35%;
+        border-radius: 100px;
+        /* border: 5px solid rgb(255, 249, 249); */
+    }
+
+    .form-group input {
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        width: 70%;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 50px auto;
+        border-radius: 10px;
+        font-size: 80px;
+        background-color: white;
+    }
+
+    .container h1 {
+        font-family: 'Quicksand', sans-serif;
+        color: rgb(236, 69, 13);
+        text-align: center;
+        padding: 30px 70px;
+        font-size: 130px;
+    }
+
+    .container .btn {
+        font-family: 'Quicksand', sans-serif;
+        display: block;
+        width: 70%;
+        margin: 30px auto;
+        padding: 30px;
+        margin: 35px auto;
+    }
+    .container button:hover{
+        color: rgb(236, 69, 13);;
+    }
+
+    .gym {
+        text-decoration: none;
+        position: absolute;
+        left: 127px;
+        padding: 0px 51px;
+        margin: -28 63px;
+        font-size: 177px
+    }
+
+    .gym h1 {
+        color: rgb(236, 69, 13);
+        padding: 4px 2px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div><b>Fitness Club</b></div>
+        </div>
+        <!-- Mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Fitness Calculater</a></li>
+                <li><a href="#">Personal Training</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now </button>
+            <button class="btn">Email us </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1> Join the best gym of Delhi (NCR)</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone No">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="gym">
+        <h1>BUILD</h1>
+        <h4>YOUR BODY</h4>
+        <h1>TRANSFORM </h1>
+        <h4>YOUR LIFE !!</h4>
+    </div>
+</body>
+
+</html>
